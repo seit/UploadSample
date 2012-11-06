@@ -1,0 +1,12 @@
+<h1>Fileを登録してやー</h1>
+
+<%= form_for @file, :multiport => true do |f| %>
+  <div class="field">
+    <p>file</p>
+    <%= f.file_field :file %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit 'アップロード' %>
+  </div>
+<% end %>
